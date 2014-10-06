@@ -212,12 +212,12 @@
       return number;
     }
 
-    var data = date.getUTCFullYear() +
-        pad( date.getUTCMonth() + 1 ) +
-        pad( date.getUTCDate() ) +
-        'T' + pad( date.getUTCHours() ) +
-        pad( date.getUTCMinutes() ) +
-        pad( date.getUTCSeconds() ) +
+    var data = date.getUTCFullYear().toString() +
+        pad( date.getUTCMonth().toString() + 1 ) +
+        pad( date.getUTCDate().toString() ) +
+        'T' + pad( date.getUTCHours().toString() ) +
+        pad( date.getUTCMinutes().toString() ) +
+        pad( date.getUTCSeconds().toString() ) +
         'Z';
 
     return new this(data);
