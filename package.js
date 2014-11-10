@@ -1,7 +1,10 @@
 Package.describe({
-  summary: "iCalendar .ics export"
+  summary: 'iCalendar .ics export',
+  version: '1.0.0',
+  git: 'https://github.com/Zaku-eu/meteor-ics.git'
 });
 
-Package.on_use(function (api) {
-  api.add_files("ics.js", "server");
+Package.onUse(function(api) {
+  api.versionsFrom('METEOR@0.9.0');
+  api.addFiles('zaku:ics.js', 'server');
 });
