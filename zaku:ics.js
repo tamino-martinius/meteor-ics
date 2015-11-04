@@ -15,7 +15,7 @@
   var root = this;
 
   // Create the iCalendar object.
-  var iCalendar = {};
+  iCalendar = {};
 
   // Export the iCalendar object for **Node.js**, with
   // backwards-compatibility for the old `require()` API. If we're in
